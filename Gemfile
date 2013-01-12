@@ -11,7 +11,7 @@ gem 'libv8'
 gem 'less'
 gem 'less-rails'
 gem 'twitter-bootstrap-rails'
-
+gem 'gravatar_image_tag'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -33,6 +33,7 @@ end
 group :test do
   gem 'webrat'
   gem 'rspec'
+  gem 'factory_girl_rails'
 end
 
 gem 'jquery-rails'

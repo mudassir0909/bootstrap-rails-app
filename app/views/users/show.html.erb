@@ -1,1 +1,10 @@
-<div class="span4 well"><%= @user.name %>, <%= @user.email %></div>
+<div class="span12 well">
+  <h1 class="span6 pull-left">
+    <%= gravatar_for @user %>
+    <%= @user.name %>
+  </h1>
+  <div class="well span2 pull-right">
+    <strong>Name</strong> <%= @user.name %><br>
+    <strong>URL</strong> <%= link_to user_path(@user), @user %>
+  </div>
+</div>
