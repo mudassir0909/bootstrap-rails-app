@@ -7,11 +7,11 @@
         <span class="icon-bar"></span>
       </a>
       <% logo = image_tag("rails.png", :alt => "Twitter Bootstrap Rails") %>
-      <%= link_to logo, '#', :class => 'brand' %>
+      <%= link_to logo, root_path, :class => 'brand' %>
       <div class="nav-collapse">
         <ul class="nav">
-          <li><%= link_to "Home", '#' %></li>
-          <li><%= link_to "Help", '#' %></li>
+          <li><%= link_to "Home", root_path %></li>
+          <li><%= link_to "Help", help_path %></li>
           <li><%= link_to "Sign In", '#' %></li>
         </ul>
       </div>
