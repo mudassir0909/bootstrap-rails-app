@@ -6,6 +6,11 @@ gem 'rails', '3.2.10'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3'
+gem 'therubyracer'
+gem 'libv8'
+gem 'less'
+gem 'less-rails'
+gem 'twitter-bootstrap-rails'
 
 
 # Gems used only for assets and not required
