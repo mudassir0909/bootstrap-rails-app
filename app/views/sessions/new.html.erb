@@ -1,0 +1,12 @@
+<div class="well span12 transparent">
+  <h3 class="text-info">Sign in</h3>
+  <%= form_for(:session, :url => sessions_path, :html => { :class => "form-inline"}) do |f| %>
+      <%= f.label :email %>
+      <%= f.text_field :email%>
+      <%= f.label :password%>
+      <%= f.password_field :password%>
+      <%= f.submit "Sign in", :class => "btn btn-primary"%>
+  <% end %>
+  <p class="text-info"><b>New User?</b> &nbsp; &nbsp;<%= link_to "Sign up Now !", signup_path, :class => "btn btn-info"%></p>
+</div>
+
