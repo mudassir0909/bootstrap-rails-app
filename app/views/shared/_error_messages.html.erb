@@ -1,0 +1,9 @@
+<% if @user.errors.any? %>
+  <div class="alert alert-error">
+    <button type="button" class="close" data-dismiss="alert">&times;</button>
+    <h4><%= pluralize(@user.errors.count, "error") %> prohibited this user from being saved !</h4>
+    <% @user.errors.full_messages.each do |msg| %>
+      <h6><%= msg %></h6>
+    <% end %>
+  </div>
+<% end %>

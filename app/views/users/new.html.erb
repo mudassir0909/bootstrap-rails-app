@@ -1,2 +1,35 @@
-<h1>Users#new</h1>
-<p>Find me in app/views/users/new.html.erb</p>
+<h3 class="text-error">You filthy mudblood ! you must sign up before you can even touch this site</h3>
+<%= render 'shared/error_messages' %>
+<div class="well span7">
+  <%= form_for(@user, :html => { :class => "float-left form-horizontal"}) do |f| %>
+    <div class="control-group">
+      <%= f.label :name, :class => "control-label" %>
+      <div class="controls">
+        <%= f.text_field :name%>
+      </div>
+    </div>
+    <div class="control-group">
+      <%= f.label :email, :class => "control-label" %>
+      <div class="controls">
+        <%= f.text_field :email%>
+      </div>
+    </div>
+    <div class="control-group">
+      <%= f.label :password, :class => "control-label" %>
+      <div class="controls">
+        <%= f.password_field :password%>
+      </div>
+    </div>
+    <div class="control-group">
+      <%= f.label :password_confirmation, "Confirmation", :class => "control-label" %>
+      <div class="controls">
+        <%= f.password_field :password_confirmation%>
+      </div>
+    </div>
+    <div class="control-group">
+      <div class="controls">
+        <%= f.submit "Sign up", :class => "btn btn-success"%>
+      </div>
+    </div>
+  <% end %>
+</div>
